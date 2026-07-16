@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, sans-serif;
+    color:#222;
+    background:#fafafa;
+    margin:0;
+    line-height:1.7;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+.hero{
+    padding:100px 20px 80px;
+    border-bottom:1px solid #e5e5e5;
+}
+h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+.role{
+    font-size:22px;
+    color:#444;
+}
+.tagline{
+    color:#666;
+}
+.actions{
+    margin-top:30px;
+}
+.btn{
+    text-decoration:none;
+    color:#222;
+    border:1px solid #ccc;
+    padding:10px 18px;
+    margin-right:10px;
+    border-radius:6px;
+}
+.primary{
+    background:#222;
+    color:white;
+}
+.card{
+    background:white;
+    border:1px solid #e5e5e5;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.skills span{
+    display:inline-block;
+    border:1px solid #dcdcdc;
+    padding:8px 14px;
+    border-radius:20px;
+    margin:5px;
+}
+.muted{
+    color:#777;
+}
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
