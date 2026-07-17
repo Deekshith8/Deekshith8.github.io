@@ -1,1 +1,20 @@
-body{font-family:Arial;background:#f5f7fa;color:#222;margin:0}nav{display:flex;justify-content:center;gap:30px;padding:20px;background:white}a{text-decoration:none} .hero{text-align:center;padding:100px 20px}.btn{padding:12px 20px;border:1px solid #ccc;border-radius:8px;margin:5px;display:inline-block}.primary{background:#111;color:white}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#07111f;color:white}
+.navbar{display:flex;justify-content:space-between;padding:25px 10%;background:#081423;position:sticky;top:0}
+.logo{font-size:24px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:25px}
+.resume-btn{background:#2563eb;padding:10px 18px;border-radius:8px}
+.hero{display:flex;justify-content:space-between;align-items:center;padding:90px 10%;min-height:80vh}
+.hero-left{width:60%}
+.hero h1{font-size:72px;margin:10px 0}
+.hero h2{color:#4f8cff;margin-bottom:20px}
+.desc{color:#c8d0da;line-height:1.7;max-width:700px}
+.skills span{display:inline-block;border:1px solid #26415f;padding:10px 18px;border-radius:10px;margin:10px 10px 0 0}
+.buttons a{display:inline-block;margin-top:30px;margin-right:15px;padding:14px 24px;border:1px solid #4f8cff;border-radius:10px;color:white;text-decoration:none}
+.primary{background:#2563eb}
+.hero-right{display:flex;flex-direction:column;gap:20px}
+.stat-card{background:#0d1c2d;padding:30px;border-radius:20px;min-width:220px}
+.stat-card h3{font-size:40px;color:#4f8cff}
+.about{display:flex;gap:25px;padding:50px 10%;background:white;color:#111}
+.box{flex:1;padding:30px;border:1px solid #ddd;border-radius:16px}
