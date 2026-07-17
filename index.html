@@ -3,61 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deekshith Adi H M | SDE-II</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<title>Deekshith Adi H M | Backend Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:#0b1120;color:#fff}
-header{position:sticky;top:0;background:rgba(11,17,32,.9);backdrop-filter:blur(12px);padding:20px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}
-.logo{font-size:28px;font-weight:800;color:#60a5fa}
-nav a{text-decoration:none;color:#cbd5e1;margin-left:28px}
-nav a:hover{color:#60a5fa}
-.hero{padding:90px 8%;display:grid;grid-template-columns:2fr 1fr;gap:60px;align-items:center;min-height:85vh}
-.hero h1{font-size:72px;line-height:1.05;margin:15px 0}
-.hero h2{font-size:34px;color:#60a5fa;margin-bottom:20px}
-.hero p{font-size:20px;color:#cbd5e1;line-height:1.7;max-width:700px}
-.tags span{display:inline-block;border:1px solid rgba(255,255,255,.12);padding:10px 18px;border-radius:30px;margin:20px 10px 0 0;background:#111827}
-.buttons a{display:inline-block;padding:14px 26px;border-radius:12px;text-decoration:none;margin-right:15px;margin-top:30px;transition:.3s}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:'Inter',sans-serif;
+background:#08111f;
+color:#e5e7eb;
+line-height:1.6;
+}
+body:before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(37,99,235,.18),transparent 35%),
+radial-gradient(circle at 80% 10%,rgba(59,130,246,.15),transparent 30%);
+pointer-events:none;
+}
+.container{width:min(1150px,92%);margin:auto;position:relative;z-index:1}
+nav{
+position:sticky;top:0;
+backdrop-filter:blur(12px);
+background:rgba(8,17,31,.75);
+border-bottom:1px solid rgba(255,255,255,.06);
+z-index:10;
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:24px;color:#60a5fa}
+.links a{color:#cbd5e1;text-decoration:none;margin-left:28px}
+.hero{
+display:grid;
+grid-template-columns:1.8fr 1fr;
+gap:50px;
+padding:90px 0 70px;
+align-items:center;
+}
+.hero h1{font-size:72px;line-height:1.05;margin:10px 0}
+.hero h2{font-size:30px;color:#60a5fa;margin-bottom:20px}
+.hero p{color:#94a3b8;font-size:18px;max-width:700px}
+.badges span{
+display:inline-block;
+padding:10px 18px;
+border:1px solid rgba(255,255,255,.08);
+background:#111827;
+border-radius:999px;
+margin:20px 10px 0 0;
+}
+.buttons a{
+display:inline-block;
+margin-top:30px;
+margin-right:12px;
+padding:14px 22px;
+border-radius:12px;
+text-decoration:none;
+transition:.25s;
+}
 .primary{background:#2563eb;color:white}
-.secondary{border:1px solid #334155;color:white}
-.buttons a:hover,.card:hover{transform:translateY(-5px)}
-.stats{display:flex;flex-direction:column;gap:20px}
-.card{background:#111827;padding:30px;border-radius:18px;border:1px solid rgba(255,255,255,.08);transition:.3s}
+.secondary{border:1px solid rgba(255,255,255,.12);color:white}
+.buttons a:hover,.card:hover{transform:translateY(-4px)}
+.stats{display:flex;flex-direction:column;gap:18px}
+.card{
+background:rgba(17,24,39,.8);
+border:1px solid rgba(255,255,255,.06);
+padding:28px;
+border-radius:20px;
+transition:.25s;
+}
 .card h3{font-size:42px;color:#60a5fa}
-section{padding:70px 8%}
-.section-title{font-size:42px;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
-.info,.project,.exp{background:#111827;padding:28px;border-radius:18px;border:1px solid rgba(255,255,255,.08)}
+section{padding:60px 0}
+.title{font-size:38px;margin-bottom:30px}
+.about{
+font-size:18px;
+color:#cbd5e1;
+max-width:900px;
+}
+.exp-item,.project{
+margin-bottom:20px;
+background:rgba(17,24,39,.85);
+padding:28px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.06);
+}
+.exp-head{
+display:flex;justify-content:space-between;flex-wrap:wrap;
+margin-bottom:12px
+}
+.exp-head h3{font-size:24px}
+.meta{color:#60a5fa}
+ul{padding-left:20px;color:#cbd5e1}
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:24px
+}
 .project a{color:#60a5fa;text-decoration:none}
-footer{text-align:center;padding:50px;color:#94a3b8}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:48px}header{flex-direction:column;gap:15px}}
+footer{text-align:center;padding:60px 0;color:#94a3b8}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.hero h1{font-size:48px}
+.links{display:none}
+}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">&lt;/&gt; Deekshith</div>
 <nav>
+<div class="container nav-inner">
+<div class="logo">&lt;/&gt; Deekshith</div>
+<div class="links">
 <a href="#about">About</a>
 <a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
 <a href="assets/resume.pdf">Resume</a>
+</div>
+</div>
 </nav>
-</header>
 
+<div class="container">
 <section class="hero">
 <div>
-<p>👋 Hello, I'm</p>
-<h1>Deekshith Adi H M</h1>
-<h2>Software Development Engineer II</h2>
-<p>Backend engineer with 4.5 years of experience building scalable fintech systems using Java, Spring Boot, Kafka, Redis and Microservices.</p>
+<div style="color:#60a5fa;font-weight:600;">BACKEND ENGINEER • SDE II</div>
+<h1>Deekshith<br>Adi H M</h1>
+<h2>Building scalable backend systems for fintech products.</h2>
+<p>4.5 years of experience designing APIs, distributed systems and event-driven architectures using Java, Spring Boot, Kafka, Redis and Microservices.</p>
 
-<div class="tags">
+<div class="badges">
 <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Redis</span><span>Microservices</span><span>AWS</span>
 </div>
 
 <div class="buttons">
-<a class="primary" href="mailto:deekshithadi.hm@gmail.com">Contact Me</a>
+<a class="primary" href="assets/resume.pdf">Resume</a>
 <a class="secondary" href="https://www.linkedin.com/in/deekshith-adi-493778290">LinkedIn</a>
 <a class="secondary" href="https://github.com/Deekshith8">GitHub</a>
 </div>
@@ -71,57 +149,62 @@ footer{text-align:center;padding:50px;color:#94a3b8}
 </section>
 
 <section id="about">
-<h2 class="section-title">About</h2>
-<div class="grid">
-<div class="info"><h3>Education</h3><br><p>B.E Electronics & Instrumentation<br>VTU • GPA 7.3</p></div>
-<div class="info"><h3>Location</h3><br><p>Bangalore, India</p></div>
-<div class="info"><h3>Email</h3><br><p>deekshithadi.hm@gmail.com</p></div>
-<div class="info"><h3>Focus</h3><br><p>Backend Systems & Distributed Architecture</p></div>
-</div>
+<h2 class="title">About</h2>
+<p class="about">
+Software Development Engineer with experience building high-volume fintech systems at M2P Fintech and Tata Consultancy Services. My work focuses on backend engineering, distributed systems, event-driven architectures and performance optimization. I enjoy designing reliable systems and understanding internals of databases, storage engines and large scale applications.
+</p>
 </section>
 
 <section id="experience">
-<h2 class="section-title">Experience</h2>
-<div class="grid">
-<div class="exp">
-<h3>M2P Fintech</h3>
-<p>SDE-II • Jan 2025 - Present</p><br>
+<h2 class="title">Experience</h2>
+
+<div class="exp-item">
+<div class="exp-head">
+<h3>M2P Fintech — Software Development Engineer II</h3>
+<div class="meta">2025 - Present</div>
+</div>
 <ul>
-<li>Loan Origination System</li>
-<li>Security Management System</li>
-<li>Kafka & Redis integrations</li>
-<li>Mentored junior engineers</li>
+<li>Built and enhanced Loan Origination System workflows.</li>
+<li>Developed Security Management System capabilities.</li>
+<li>Worked extensively with Kafka, Redis and Microservices.</li>
+<li>Mentored junior engineers and supported production systems.</li>
 </ul>
 </div>
-<div class="exp">
-<h3>TCS</h3>
-<p>Software Engineer • Mar 2022 - Jan 2025</p><br>
-<ul>
-<li>Insurance domain applications</li>
-<li>Java backend development</li>
-<li>Agile delivery model</li>
-</ul>
+
+<div class="exp-item">
+<div class="exp-head">
+<h3>Tata Consultancy Services — Software Engineer</h3>
+<div class="meta">2022 - 2025</div>
 </div>
+<ul>
+<li>Developed backend services for insurance domain applications.</li>
+<li>Worked in Agile teams delivering enterprise software.</li>
+<li>Built REST APIs and business workflows using Java.</li>
+</ul>
 </div>
 </section>
 
 <section id="projects">
-<h2 class="section-title">Projects</h2>
-<div class="grid">
+<h2 class="title">Projects</h2>
+
+<div class="project-grid">
 <div class="project">
-<h3>Microservices Platform</h3><br>
-<p>Spring Boot based distributed architecture using service discovery, API gateway and event driven communication.</p><br>
+<h3>Microservices Platform</h3>
+<p>Distributed architecture built using Spring Boot, service discovery, API gateway and asynchronous communication patterns.</p>
+<br>
 <a href="https://github.com/Deekshith8/Microservices">View Repository →</a>
 </div>
+
 <div class="project">
-<h3>Java Database Engine</h3><br>
-<p>Building a database from scratch with WAL, pages, storage engine concepts and future B+Tree indexing.</p>
+<h3>Java Database Engine</h3>
+<p>Personal project exploring storage engines, WAL, page layouts, serialization and future B+Tree indexing support.</p>
 </div>
 </div>
 </section>
 
 <footer>
-Built by Deekshith Adi H M • Java Backend Engineer
+deekshithadi.hm@gmail.com • Bangalore • Java Backend Engineer
 </footer>
+</div>
 </body>
 </html>
