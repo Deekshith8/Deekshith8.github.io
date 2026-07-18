@@ -453,3 +453,46 @@
 }
 
 }
+
+
+/* ================= HERO MOBILE ================= */
+
+@media (max-width: 900px){
+
+    .hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-left{
+        flex: unset;
+        transform: none;
+        width: 100%;
+    }
+
+    .hero-right{
+        flex: unset;
+        transform: none;
+    }
+
+    .hero-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+    }
+
+    .hero-tech{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-left h1{
+        white-space: normal;
+    }
+
+}
