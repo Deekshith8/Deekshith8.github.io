@@ -1,210 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deekshith Adi H M | Backend Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-font-family:'Inter',sans-serif;
-background:#08111f;
-color:#e5e7eb;
-line-height:1.6;
-}
-body:before{
-content:'';
-position:fixed;
-inset:0;
-background:
-radial-gradient(circle at 20% 20%,rgba(37,99,235,.18),transparent 35%),
-radial-gradient(circle at 80% 10%,rgba(59,130,246,.15),transparent 30%);
-pointer-events:none;
-}
-.container{width:min(1150px,92%);margin:auto;position:relative;z-index:1}
-nav{
-position:sticky;top:0;
-backdrop-filter:blur(12px);
-background:rgba(8,17,31,.75);
-border-bottom:1px solid rgba(255,255,255,.06);
-z-index:10;
-}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
-.logo{font-weight:800;font-size:24px;color:#60a5fa}
-.links a{color:#cbd5e1;text-decoration:none;margin-left:28px}
-.hero{
-display:grid;
-grid-template-columns:1.8fr 1fr;
-gap:50px;
-padding:90px 0 70px;
-align-items:center;
-}
-.hero h1{font-size:72px;line-height:1.05;margin:10px 0}
-.hero h2{font-size:30px;color:#60a5fa;margin-bottom:20px}
-.hero p{color:#94a3b8;font-size:18px;max-width:700px}
-.badges span{
-display:inline-block;
-padding:10px 18px;
-border:1px solid rgba(255,255,255,.08);
-background:#111827;
-border-radius:999px;
-margin:20px 10px 0 0;
-}
-.buttons a{
-display:inline-block;
-margin-top:30px;
-margin-right:12px;
-padding:14px 22px;
-border-radius:12px;
-text-decoration:none;
-transition:.25s;
-}
-.primary{background:#2563eb;color:white}
-.secondary{border:1px solid rgba(255,255,255,.12);color:white}
-.buttons a:hover,.card:hover{transform:translateY(-4px)}
-.stats{display:flex;flex-direction:column;gap:18px}
-.card{
-background:rgba(17,24,39,.8);
-border:1px solid rgba(255,255,255,.06);
-padding:28px;
-border-radius:20px;
-transition:.25s;
-}
-.card h3{font-size:42px;color:#60a5fa}
-section{padding:60px 0}
-.title{font-size:38px;margin-bottom:30px}
-.about{
-font-size:18px;
-color:#cbd5e1;
-max-width:900px;
-}
-.exp-item,.project{
-margin-bottom:20px;
-background:rgba(17,24,39,.85);
-padding:28px;
-border-radius:18px;
-border:1px solid rgba(255,255,255,.06);
-}
-.exp-head{
-display:flex;justify-content:space-between;flex-wrap:wrap;
-margin-bottom:12px
-}
-.exp-head h3{font-size:24px}
-.meta{color:#60a5fa}
-ul{padding-left:20px;color:#cbd5e1}
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:24px
-}
-.project a{color:#60a5fa;text-decoration:none}
-footer{text-align:center;padding:60px 0;color:#94a3b8}
-@media(max-width:900px){
-.hero{grid-template-columns:1fr}
-.hero h1{font-size:48px}
-.links{display:none}
-}
-</style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deekshith Adi H M | Software Development Engineer</title>
+
+    <meta name="description"
+        content="Portfolio of Deekshith Adi H M - Software Development Engineer with 4.5 years of experience in Java, Spring Boot, Kafka, Microservices and Distributed Systems.">
+
+    <meta name="keywords"
+        content="Java Developer, Software Development Engineer, Spring Boot, Kafka, Microservices, Backend Engineer">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
-<nav>
-<div class="container nav-inner">
-<div class="logo">&lt;/&gt; Deekshith</div>
-<div class="links">
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="assets/resume.pdf">Resume</a>
-</div>
-</div>
-</nav>
 
-<div class="container">
-<section class="hero">
-<div>
-<div style="color:#60a5fa;font-weight:600;">BACKEND ENGINEER • SDE II</div>
-<h1>Deekshith<br>Adi H M</h1>
-<h2>Building scalable backend systems for fintech products.</h2>
-<p>4.5 years of experience designing APIs, distributed systems and event-driven architectures using Java, Spring Boot, Kafka, Redis and Microservices.</p>
+    <!-- ========================================== -->
+    <!-- NAVBAR                                     -->
+    <!-- ========================================== -->
 
-<div class="badges">
-<span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Redis</span><span>Microservices</span><span>AWS</span>
-</div>
+    <header class="header">
 
-<div class="buttons">
-<a class="primary" href="assets/resume.pdf">Resume</a>
-<a class="secondary" href="https://www.linkedin.com/in/deekshith-adi-493778290">LinkedIn</a>
-<a class="secondary" href="https://github.com/Deekshith8">GitHub</a>
-</div>
-</div>
+        <nav class="navbar container">
 
-<div class="stats">
-<div class="card"><h3>4.5+</h3><p>Years Experience</p></div>
-<div class="card"><h3>10+</h3><p>Projects Delivered</p></div>
-<div class="card"><h3>Fintech</h3><p>Domain Expertise</p></div>
-</div>
-</section>
+            <a href="#" class="logo">
+                DA
+            </a>
 
-<section id="about">
-<h2 class="title">About</h2>
-<p class="about">
-Software Development Engineer with experience building high-volume fintech systems at M2P Fintech and Tata Consultancy Services. My work focuses on backend engineering, distributed systems, event-driven architectures and performance optimization. I enjoy designing reliable systems and understanding internals of databases, storage engines and large scale applications.
-</p>
-</section>
+            <ul class="nav-links">
 
-<section id="experience">
-<h2 class="title">Experience</h2>
+                <li><a href="#about">About</a></li>
 
-<div class="exp-item">
-<div class="exp-head">
-<h3>M2P Fintech — Software Development Engineer II</h3>
-<div class="meta">2025 - Present</div>
-</div>
-<ul>
-<li>Built and enhanced Loan Origination System workflows.</li>
-<li>Developed Security Management System capabilities.</li>
-<li>Worked extensively with Kafka, Redis and Microservices.</li>
-<li>Mentored junior engineers and supported production systems.</li>
-</ul>
-</div>
+                <li><a href="#experience">Experience</a></li>
 
-<div class="exp-item">
-<div class="exp-head">
-<h3>Tata Consultancy Services — Software Engineer</h3>
-<div class="meta">2022 - 2025</div>
-</div>
-<ul>
-<li>Developed backend services for insurance domain applications.</li>
-<li>Worked in Agile teams delivering enterprise software.</li>
-<li>Built REST APIs and business workflows using Java.</li>
-</ul>
-</div>
-</section>
+                <li><a href="#projects">Projects</a></li>
 
-<section id="projects">
-<h2 class="title">Projects</h2>
+                <li><a href="#skills">Expertise</a></li>
 
-<div class="project-grid">
-<div class="project">
-<h3>Microservices Platform</h3>
-<p>Distributed architecture built using Spring Boot, service discovery, API gateway and asynchronous communication patterns.</p>
-<br>
-<a href="https://github.com/Deekshith8/Microservices">View Repository →</a>
-</div>
+                <li><a href="#contact">Contact</a></li>
 
-<div class="project">
-<h3>Java Database Engine</h3>
-<p>Personal project exploring storage engines, WAL, page layouts, serialization and future B+Tree indexing support.</p>
-</div>
-</div>
-</section>
+            </ul>
 
-<footer>
-deekshithadi.hm@gmail.com • Bangalore • Java Backend Engineer
-</footer>
-</div>
-</body>
-</html>
+            <a href="assets/resume.pdf"
+                class="resume-btn"
+                target="_blank">
+
+                Resume
+
+            </a>
+
+            <div class="hamburger">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================== -->
+    <!-- HERO                                       -->
+    <!-- ========================================== -->
+
+    <section class="hero">
+
+        <div class="container hero-container">
+
+            <div class="hero-left">
+
+                <p class="hero-tag">
+
+                    SOFTWARE DEVELOPMENT ENGINEER
+
+                </p>
+
+                <h1>
+
+                    Deekshith
+                    <br>
+                    Adi H M
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Building scalable applications,
+                    distributed systems and high-performance
+                    APIs using Java, Spring Boot,
+                    Kafka and Microservices.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="assets/resume.pdf"
+                        target="_blank"
+                        class="primary-btn">
+
+                        Resume
+
+                    </a>
+
+                    <a href="#projects"
+                        class="secondary-btn">
+
+                        View Work
+
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="mailto:deekshithadi.hm@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/deekshith-adi-493778290"
+                        target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="https://github.com/Deekshith8"
+                        target="_blank">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a href="https://leetcode.com/u/Deek100/"
+                        target="_blank">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="hero-right">
+
+                <div class="hero-card">
+
+                    <h3>
+
+                        4.5+
+
+                    </h3>
+
+                    <span>
+
+                        Years Experience
+
+                    </span>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <h3>
+
+                        Java
+
+                    </h3>
+
+                    <span>
+
+                        Backend Development
+
+                    </span>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <h3>
+
+                        Spring Boot
+
+                    </h3>
+
+                    <span>
+
+                        Microservices
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ========================================== -->
+    <!-- ABOUT                                      -->
+    <!-- ========================================== -->
+
+    <section id="about" class="about section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p>
+
+                    ABOUT
+
+                </p>
+
+                <h2>
+
+                    Who I Am
+
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-left">
+
+                    <p>
+
+                        I'm a Software Development Engineer with
+                        <strong>4.5 years of experience</strong>
+                        building scalable software,
+                        distributed systems and backend services.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy solving complex engineering
+                        problems, designing reliable APIs,
+                        optimizing application performance,
+                        and writing clean, maintainable code.
+
+                    </p>
+
+                    <p>
+
+                        Beyond my professional work,
+                        I actively explore database internals,
+                        storage engines,
+                        distributed systems,
+                        and system design by building
+                        personal engineering projects from scratch.
+
+                    </p>
+
+                </div>
+
+                <div class="about-right">
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            Education
+
+                        </h4>
+
+                        <p>
+
+                            Bachelor of Engineering
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            Current Role
+
+                        </h4>
+
+                        <p>
+
+                            Software Development Engineer II
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            Location
+
+                        </h4>
+
+                        <p>
+
+                            Bengaluru, India
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
