@@ -788,11 +788,12 @@ footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:80px;
+    gap:40px;
 }
 
 .hero-left{
     flex:1;
+   transform: translateX(-25px);
 }
 
 .hero-left h1{
