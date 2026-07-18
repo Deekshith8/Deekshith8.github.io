@@ -1,1 +1,133 @@
+/* ==========================================================
+   PREMIUM BACKGROUND
+   Vercel / Linear Inspired
+========================================================== */
 
+body {
+
+    position: relative;
+    overflow-x: hidden;
+    background: #050505;
+
+}
+
+/* ----------------------------------------------------------
+   Animated Aurora
+---------------------------------------------------------- */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+
+        radial-gradient(circle at 20% 20%,
+            rgba(255,255,255,0.05),
+            transparent 30%),
+
+        radial-gradient(circle at 80% 30%,
+            rgba(90,90,255,0.05),
+            transparent 35%),
+
+        radial-gradient(circle at 50% 80%,
+            rgba(255,255,255,0.03),
+            transparent 40%);
+
+    filter: blur(80px);
+
+    animation: auroraMove 18s ease-in-out infinite alternate;
+
+    z-index: -3;
+
+}
+
+/* ----------------------------------------------------------
+   Grid
+---------------------------------------------------------- */
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px
+        );
+
+    background-size: 48px 48px;
+
+    mask-image:
+        radial-gradient(circle at center,
+            black,
+            transparent 95%);
+
+    z-index: -2;
+
+    opacity: .6;
+
+}
+
+/* ----------------------------------------------------------
+   Noise Layer
+---------------------------------------------------------- */
+
+.background-noise {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: .02;
+
+    background-image:
+        url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+    z-index: -1;
+
+}
+
+/* ----------------------------------------------------------
+   Animation
+---------------------------------------------------------- */
+
+@keyframes auroraMove {
+
+    from {
+
+        transform:
+            translate(-4%, -2%)
+            scale(1);
+
+    }
+
+    to {
+
+        transform:
+            translate(4%, 3%)
+            scale(1.15);
+
+    }
+
+}
