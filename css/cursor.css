@@ -1,1 +1,158 @@
+/* ==========================================================
+   CUSTOM CURSOR
+   Premium Engineering Portfolio
+========================================================== */
 
+/* Hide the default cursor on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+
+    html,
+    body,
+    a,
+    button,
+    input,
+    textarea,
+    select {
+        cursor: none;
+    }
+
+    /* -----------------------------
+       Cursor Dot
+    ------------------------------ */
+
+    .cursor-dot {
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+
+        background: #ffffff;
+
+        pointer-events: none;
+
+        z-index: 99999;
+
+        transform: translate(-50%, -50%);
+
+        transition:
+            transform .15s ease,
+            opacity .25s ease;
+
+        will-change: transform;
+
+    }
+
+    /* -----------------------------
+       Cursor Ring
+    ------------------------------ */
+
+    .cursor-ring {
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 34px;
+        height: 34px;
+
+        border-radius: 50%;
+
+        border: 1px solid rgba(255,255,255,.35);
+
+        background: rgba(255,255,255,.02);
+
+        backdrop-filter: blur(2px);
+
+        pointer-events: none;
+
+        z-index: 99998;
+
+        transform: translate(-50%, -50%);
+
+        transition:
+
+            width .25s ease,
+            height .25s ease,
+            border-color .25s ease,
+            background .25s ease,
+            opacity .25s ease;
+
+        will-change: transform;
+
+    }
+
+    /* -----------------------------
+       Hover State
+    ------------------------------ */
+
+    .cursor-ring.hover {
+
+        width: 56px;
+        height: 56px;
+
+        border-color: rgba(255,255,255,.7);
+
+        background: rgba(255,255,255,.05);
+
+    }
+
+    .cursor-dot.hover {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.8);
+
+    }
+
+    /* -----------------------------
+       Click Animation
+    ------------------------------ */
+
+    .cursor-ring.click {
+
+        width: 26px;
+        height: 26px;
+
+    }
+
+    .cursor-dot.click {
+
+        transform:
+            translate(-50%, -50%)
+            scale(.8);
+
+    }
+
+    /* -----------------------------
+       Hidden State
+    ------------------------------ */
+
+    .cursor-hidden {
+
+        opacity: 0;
+
+    }
+
+}
+
+/* --------------------------------------------------
+   Disable completely on touch devices
+--------------------------------------------------- */
+
+@media (hover: none), (pointer: coarse) {
+
+    .cursor-dot,
+    .cursor-ring {
+
+        display: none !important;
+
+    }
+
+}
