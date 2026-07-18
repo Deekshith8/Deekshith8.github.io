@@ -795,6 +795,12 @@ footer{
     flex:1;
 }
 
+.hero-left h1{
+    white-space: nowrap;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.05;
+}
+
 .hero-right{
     flex:0 0 230px;
     display:flex;
