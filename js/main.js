@@ -206,25 +206,7 @@ document
    ACTIVE NAV LINK STYLE
 ========================================================== */
 
-const style = document.createElement("style");
 
-style.textContent = `
-
-.nav-links a.active{
-
-    color:white;
-
-}
-
-.nav-links a.active::after{
-
-    width:100%;
-
-}
-
-`;
-
-document.head.appendChild(style);
 
 /* ==========================================================
    ESC CLOSES MOBILE MENU
