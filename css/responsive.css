@@ -428,3 +428,28 @@
     }
 
 }
+
+
+@media(max-width:900px){
+
+.hero-container{
+
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+
+}
+
+.hero-right{
+
+    margin-bottom:10px;
+
+}
+
+.hero-meta{
+
+    justify-content:center;
+
+}
+
+}
